@@ -1,8 +1,8 @@
-# Hello World of Cumulocity Microservices
+# Hello World of Cumulocity IoT Microservices
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/43b50d865e48495996ee831f27459823)](https://app.codacy.com/app/manasesjesus/c8y_hw_microservice_python?utm_source=github.com&utm_medium=referral&utm_content=manasesjesus/c8y_hw_microservice_python&utm_campaign=Badge_Grade_Dashboard)
 
-Cumulocity microservice example developed using Python and Docker.
+Cumulocity IoT microservice example developed using Python and Docker.
 
 ### Prerequisites
 
@@ -24,11 +24,11 @@ Then pack *image.tar* together with the manifest *cumulocity.json* into a ZIP fi
 $ zip python-microservice cumulocity.json image.tar
 ```
 
-The resulting *python-microservice.zip* file contains the microservice and it is ready to be uploaded to the Cumulocity platform.
+The resulting *python-microservice.zip* file contains the microservice and it is ready to be uploaded to the Cumulocity IoT platform.
 
 ### Deployment
 
-Deploy the microservice application (refer to [Adding own applications](https://cumulocity.com/guides/users-guide/administration/#a-name-adding-applications-a-adding-own-applications) in the Cumulocity's User guide) and subscribe it afterwards.
+Deploy the microservice application (refer to [Adding own applications](https://cumulocity.com/guides/users-guide/administration/#a-name-adding-applications-a-adding-own-applications) in the Cumulocity IoT's User guide) and subscribe it afterwards.
 
 It may take some minutes for the ZIP file to be uploaded. Once completed, the three endpoints of the microservice application can be tested.
 
