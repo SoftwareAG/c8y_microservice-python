@@ -1,7 +1,5 @@
 # Hello World of Cumulocity IoT Microservices
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/43b50d865e48495996ee831f27459823)](https://app.codacy.com/app/manasesjesus/c8y_hw_microservice_python?utm_source=github.com&utm_medium=referral&utm_content=manasesjesus/c8y_hw_microservice_python&utm_campaign=Badge_Grade_Dashboard)
-
 Cumulocity IoT microservice example developed using Python and Docker.
 
 ### Prerequisites
@@ -37,7 +35,9 @@ It may take some minutes for the ZIP file to be uploaded. Once completed, the th
 Use a web browser or a terminal command (e.g. cURL) to make a GET request to the microservice endpoints providing your user credentials.
 
 ```http
-GET <tenant>.cumulocity.com/service/python-microservice/environment
+GET /service/python-microservice/environment
+Host: <TENANT_DOMAIN>
+Authorization: <AUTHORIZATION>
 ```
 
 ______________________
