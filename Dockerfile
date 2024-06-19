@@ -1,7 +1,7 @@
-FROM python:alpine3.6
+FROM python:alpine
 
 COPY application.py /
-RUN pip install flask==0.10.1
+RUN pip install flask waitress
 
 ENTRYPOINT ["python"]
 CMD ["-u", "application.py"]

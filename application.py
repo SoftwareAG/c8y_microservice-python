@@ -28,4 +28,7 @@ def environment():
     return jsonify(environment_data)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+    import logging
+    logging.basicConfig(level=logging.INFO)
+    from waitress import serve
+    serve(app, host="0.0.0.0", port=80)
